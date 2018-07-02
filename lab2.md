@@ -18,7 +18,7 @@ You can now test out the OpenFaaS UI by going to http://127.0.0.1:8080 - if you'
 We can deploy some sample functions and then use them to test things out:
 
 ```
-$ faas-cli deploy -f https://raw.githubusercontent.com/openfaas/faas/master/stack.yml
+$ faas-cli --gateway 127.0.0.1:8080 deploy -f https://raw.githubusercontent.com/openfaas/faas/master/stack.yml
 ```
 
 ![](./screenshot/markdown_portal.png)
